@@ -1,0 +1,172 @@
+/* Ej 1 */
+
+.nav_ej1 {
+    box-sizing: border-box;
+    width:90%;
+    margin:3em 5%;
+    border: solid 1px black;
+    display:flex;
+}
+
+.nav_ej1 ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav_ej1 li {
+    justify-content: end;
+    box-sizing: border-box;
+    padding:1em;
+}
+
+.nav_ej1 a {
+    color:black;
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+.brand img{
+    height:50px;
+    padding:1em;
+}
+
+ /* Ej 2 */
+
+ .ej2 {
+     width:100%;
+     height:400px;
+     background: rgb(36,0,35);
+     background: linear-gradient(90deg, rgba(36,0,35,0.6713060224089635) 0%, rgba(94,9,121,0.7105217086834734) 35%, rgba(255,0,119,0.5144432773109244) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.button-ej2 {
+    border: none;
+    background: #2c2931;
+    color:white;
+    margin-top: 150px;
+    height:fit-content;
+    padding:30px 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20pt;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.button-ej2:hover {
+    background-color: #2c293144;
+    border: solid 1px white;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.425);
+    margin-left:20px;
+}
+
+/* Ej 3 */
+
+.cielo {
+    background-color: skyblue;
+    height:500px;
+    width:1200px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.tierra {
+    background-color: wheat;
+    height:300px;
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:100px;
+    opacity: 0;
+    animation:opacidad 1s ease-in-out 1s forwards;;
+}
+
+.texto h1 {
+    font-size:40pt;
+    margin:10px 0 0 0;
+} 
+
+.texto h2 {
+    font-size:14pt;
+    font-weight: 300;
+    margin:0 0 0 0;
+}
+
+.svg1 {
+    width:150px;
+    height:auto;
+    margin-left:100px;
+    margin-top:30px;
+    animation:opacidad 1s ease-in-out 0s forwards;;
+}
+
+.svg2 {
+    position: relative;
+    height:150px;
+    top:0;
+    left:-1000px;
+    animation:enterleft 1s ease-in-out 1.5s forwards;;
+}
+
+.svg3 {
+    position: relative;
+    height: 150px;
+    top: -100px;
+    left: 400px;
+    opacity: 0;
+    animation:opacidad 1s ease-in-out 2.5s forwards;;
+}
+
+.svg4 {
+    position: relative;
+    height: 150px;
+    top: 150px;
+    left: 400px;
+}
+
+.svg5 {
+    position: relative;
+    height: 100px;
+    top: 120px;
+    left: 2000px;
+    animation:enterright 1s ease-in-out 1.5s forwards;;
+
+}
+
+
+@keyframes enterleft {
+    0%{
+        left:-1000px;
+    }
+    100%{
+        left:40px;
+    }
+}
+
+@keyframes enterright {
+    0%{
+        left:2000px;
+    }
+    100%{
+        left:330px;
+    }
+}
+
+@keyframes opacidad {
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
